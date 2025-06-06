@@ -34,7 +34,7 @@ v.1.0.0-20250605
   -  module-lab-4.2 - Message Oriented Middlewares (MOM)  
     - [RabbitMQ](http://www.rabbitmq.com)  
 - Examples in ``pcd.lab10.rabbitmq``
-  - Using Rabbit MQ in Java, based on [client side tutorials](https://www.rabbitmq.com/java-client.html)
+  - Using [Rabbit MQ in Java](https://www.rabbitmq.com/java-client.html), based on [client side tutorials](https://www.rabbitmq.com/tutorials)
   - Before running the examples: [install and run RabbitMQ middleware on localhost](https://www.rabbitmq.com/docs/download)
     - quickest way: through Docker  
-      `` docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4-management``
+      ``docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4-management``
