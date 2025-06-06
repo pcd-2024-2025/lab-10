@@ -34,4 +34,6 @@ v.1.0.0-20250605
     - [RabbitMQ](http://www.rabbitmq.com)  
 - Examples in ``pcd.lab10.rabbitmq``
   - Using Rabbit MQ in Java, based on [client side tutorials](https://www.rabbitmq.com/java-client.html)
-  - Before running the examples: [install and run RabbitMQ middleware on localhost](https://www.rabbitmq.com/docs/download).
+  - Before running the examples: [install and run RabbitMQ middleware on localhost](https://www.rabbitmq.com/docs/download)
+    - quickest way: through Docker  
+      `` docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4-management``
