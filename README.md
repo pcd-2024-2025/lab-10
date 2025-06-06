@@ -15,7 +15,8 @@ v.1.0.0-20250605
   - Before running the examples, launch the RMI middleware on localhost by running ``rmiregistry``. **The registry needs to access the classpath including the ``*.class`` of remote objects accessed**. The simplest way to do this is to run ``rmiregistry`` from the classpath directory (``lab10/target/classes``).  
   - First example `pcd.lab10.rmi.example_01` 
     - Server side (`RunServerSide`)  
-	  - Remote objects => instances of class implementing interface Remote  
+	  - Remote objects => instances of class implementing interface ``Remote``  
+        - **every remote method must throw ``RemoteException``**
       - Publishing (exporting) remote objects on a note with a name by the Registry  
 	- Client side (`RunClientSide`)  
       - Lookup remote objects  
@@ -25,7 +26,7 @@ v.1.0.0-20250605
       - Which control architecture? Concurrency? Races?  
   - Second example `pcd.lab10.rmi.example_02`   
     - Pattern observer with remote listeners
-    - Passing parameters by reference (remote objects)
+      - Passing parameters by reference (remote objects)     
 
 ### Message-Oriented Middlewares for Distributed Computing
 
