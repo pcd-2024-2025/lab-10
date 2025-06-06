@@ -4,6 +4,8 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 
+import pcd.lab10.rmi.example_01.MyService;
+
 public class RunClientSide {
 
     private RunClientSide() {}
@@ -19,7 +21,9 @@ public class RunClientSide {
             log("count value " + value);
                         
             var l = new MyCounterListenerImpl();
-            c.addListener(l);
+            var lproxy = (RemoteCounterListener) UnicastRemoteObject.exportObject(l, 0);
+
+            c.addListener(lproxy);
             
             c.inc();
             

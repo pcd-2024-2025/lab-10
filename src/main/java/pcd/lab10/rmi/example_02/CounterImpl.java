@@ -13,7 +13,7 @@ public class CounterImpl implements Counter {
 		listeners = new ArrayList<>();
 	}
 	
-	public void inc(){
+	public synchronized void inc(){
 		value++;
 		for (var l: listeners) {
 			try {
@@ -24,7 +24,7 @@ public class CounterImpl implements Counter {
 		}
 	}
 	
-	public int getValue(){
+	public synchronized int getValue(){
 		return value;
 	}
 

@@ -23,6 +23,9 @@ public class RunClientSide {
             Message msg = new Message("Hello from Cesena");
             obj.receive(msg);
             
+            System.out.println(msg.getContent());
+            
+            
             System.out.println("done.");
             
         } catch (Exception e) {

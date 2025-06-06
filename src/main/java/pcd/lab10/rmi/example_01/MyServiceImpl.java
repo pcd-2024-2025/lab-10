@@ -14,9 +14,8 @@ public class MyServiceImpl implements MyService {
     	return a + b;
     }
 
-    public /* synchronized */ void receive(Message m) throws RemoteException {
-    		System.out.println("Message received: " + m.getContent());
-    	    // while (true) {} 
+    public void receive(Message m) throws RemoteException {
+    	System.out.println("Message received: " + m.getContent());
     }
         
 }

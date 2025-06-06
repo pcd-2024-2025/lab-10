@@ -11,13 +11,13 @@ public class RunServerSide  {
     public static void main(String args[]) {
         
         try {
-            MyService helloObj = new MyServiceImpl();
-            MyService helloObjStub = (MyService) UnicastRemoteObject.exportObject(helloObj, 0);
+            MyService myRemoteObj = new MyServiceImpl();
+            MyService myRemoteObjProxy = (MyService) UnicastRemoteObject.exportObject(myRemoteObj, 0);
 
             // Bind the remote object's stub in the registry
             Registry registry = LocateRegistry.getRegistry();
             
-            registry.rebind(OBJ_NAME, helloObjStub);
+            registry.rebind(OBJ_NAME, myRemoteObjProxy);
             
             System.out.println("Object registered.");
         } catch (Exception e) {
