@@ -12,7 +12,7 @@ v.1.0.0-20250605
     - [Jim Waldo on Java RMI's](https://pdos.csail.mit.edu/6.824/papers/waldo-rmi.pdf)
    - [Java RMI Hello World](https://docs.oracle.com/javase/8/docs/technotes/guides/rmi/hello/hello-world.html)
 - Examples in ``pcd.lab10.rmi``
-  - Before running the examples, launch the RMI middleware on localhost by running ``rmiregistry``. **The registry needs to access the classpath including the ``*.class`` of remote objects accessed**. The simplest way to do thos is to run ``rmiregistry`` from the classpath directory (``lab10/target/classes``).  
+  - Before running the examples, launch the RMI middleware on localhost by running ``rmiregistry``. **The registry needs to access the classpath including the ``*.class`` of remote objects accessed**. The simplest way to do this is to run ``rmiregistry`` from the classpath directory (``lab10/target/classes``).  
   - First example `pcd.lab10.rmi.example_01` 
     - Server side (`RunServerSide`)  
 	  - Remote objects => instances of class implementing interface Remote  
